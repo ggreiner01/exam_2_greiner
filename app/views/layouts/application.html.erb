@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exam2project</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+      <div class="container-narrow">
+    <div class="masthead">
+      <%= render 'layouts/user_header' %>
+      <h3 class="muted"><%= link_to "CSC4500 FA2018 Devise", root_path %></h3>
+      <h5 class="muted">A demo of User Authentication with Devise</h5>
+    </div>
+    <hr />
+    <%= yield %>
+  </div>
+
+
+  </body>
+</html>

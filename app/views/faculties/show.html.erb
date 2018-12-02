@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fname:</strong>
+  <%= @faculty.fname %>
+</p>
+
+<p>
+  <strong>Lname:</strong>
+  <%= @faculty.lname %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @faculty.phone_number %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @faculty.position %>
+</p>
+
+<p>
+  <strong>Administration:</strong>
+  <%= @faculty.administration_id %>
+</p>
+
+<p>
+  <strong>Committee:</strong>
+  <%= @faculty.committee_id %>
+</p>
+
+<%= link_to 'Edit', edit_faculty_path(@faculty) %> |
+<%= link_to 'Back', faculties_path %>

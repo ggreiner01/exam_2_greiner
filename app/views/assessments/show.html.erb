@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= @assessment.grade %>
+</p>
+
+<p>
+  <strong>Faculty:</strong>
+  <%= @assessment.faculty_id %>
+</p>
+
+<p>
+  <strong>Program:</strong>
+  <%= @assessment.program_id %>
+</p>
+
+<%= link_to 'Edit', edit_assessment_path(@assessment) %> |
+<%= link_to 'Back', assessments_path %>

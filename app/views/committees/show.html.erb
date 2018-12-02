@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Administration:</strong>
+  <%= @committee.administration_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @committee.name %>
+</p>
+
+<p>
+  <strong>Num of faculty:</strong>
+  <%= @committee.num_of_faculty %>
+</p>
+
+<%= link_to 'Edit', edit_committee_path(@committee) %> |
+<%= link_to 'Back', committees_path %>

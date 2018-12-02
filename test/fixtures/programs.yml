@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  faculty_id: 1
+  open_space: 1
+
+two:
+  name: MyString
+  faculty_id: 1
+  open_space: 1

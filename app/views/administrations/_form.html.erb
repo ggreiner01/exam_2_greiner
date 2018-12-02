@@ -1,0 +1,37 @@
+<%= form_with(model: administration, local: true) do |form| %>
+  <% if administration.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(administration.errors.count, "error") %> prohibited this administration from being saved:</h2>
+
+      <ul>
+      <% administration.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :administration_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone_number %>
+    <%= form.text_field :phone_number, id: :administration_phone_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state %>
+    <%= form.text_field :state, id: :administration_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :zip %>
+    <%= form.text_field :zip, id: :administration_zip %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
